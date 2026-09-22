@@ -1,0 +1,5 @@
+15143 347898375840389362
+58676 347898375840389362
+
+So in this case the row-major sum is faster then the column major sum by around 3x.
+Since in row-major takes more advantage of the contiguous arrays, since whenever we do it via rows, then it will have to myltiply the pointers by 4000(row_length)*uint_64 to get the right address for accessing each row first.
